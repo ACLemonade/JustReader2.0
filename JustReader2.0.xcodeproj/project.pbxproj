@@ -9,23 +9,125 @@
 /* Begin PBXBuildFile section */
 		8CB749241F4FC06B008BA347 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749231F4FC06B008BA347 /* main.m */; };
 		8CB749271F4FC06B008BA347 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749261F4FC06B008BA347 /* AppDelegate.m */; };
-		8CB7492A1F4FC06B008BA347 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749291F4FC06B008BA347 /* ViewController.m */; };
 		8CB7492D1F4FC06B008BA347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB7492B1F4FC06B008BA347 /* Main.storyboard */; };
 		8CB7492F1F4FC06B008BA347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB7492E1F4FC06B008BA347 /* Assets.xcassets */; };
 		8CB749321F4FC06B008BA347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB749301F4FC06B008BA347 /* LaunchScreen.storyboard */; };
+		8CB7498E1F4FC81E008BA347 /* BasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7493E1F4FC81D008BA347 /* BasicNavigationController.m */; };
+		8CB7498F1F4FC81E008BA347 /* BasicTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749401F4FC81D008BA347 /* BasicTabBarController.m */; };
+		8CB749901F4FC81E008BA347 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749421F4FC81D008BA347 /* BasicViewController.m */; };
+		8CB749911F4FC81E008BA347 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749481F4FC81D008BA347 /* NSDate+Utils.m */; };
+		8CB749921F4FC81E008BA347 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7494A1F4FC81D008BA347 /* NSString+Utils.m */; };
+		8CB749931F4FC81E008BA347 /* NSObject+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7494D1F4FC81E008BA347 /* NSObject+AFNetworking.m */; };
+		8CB749941F4FC81E008BA347 /* NSObject+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7494F1F4FC81E008BA347 /* NSObject+MJExtension.m */; };
+		8CB749951F4FC81E008BA347 /* UIControl+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749521F4FC81E008BA347 /* UIControl+Event.m */; };
+		8CB749961F4FC81E008BA347 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749541F4FC81E008BA347 /* UIScrollView+Refresh.m */; };
+		8CB749971F4FC81E008BA347 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749561F4FC81E008BA347 /* UIView+Frame.m */; };
+		8CB749981F4FC81E008BA347 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749641F4FC81E008BA347 /* BookDetailViewController.m */; };
+		8CB749991F4FC81E008BA347 /* BookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749661F4FC81E008BA347 /* BookListViewController.m */; };
+		8CB7499A1F4FC81E008BA347 /* ChapterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749681F4FC81E008BA347 /* ChapterDetailViewController.m */; };
+		8CB7499B1F4FC81E008BA347 /* ChapterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7496A1F4FC81E008BA347 /* ChapterListViewController.m */; };
+		8CB7499C1F4FC81E008BA347 /* ChooseBookSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7496C1F4FC81E008BA347 /* ChooseBookSourceViewController.m */; };
+		8CB7499D1F4FC81E008BA347 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7496E1F4FC81E008BA347 /* HomePageViewController.m */; };
+		8CB7499E1F4FC81E008BA347 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749701F4FC81E008BA347 /* PageContentViewController.m */; };
+		8CB7499F1F4FC81E008BA347 /* AutoCompleteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749731F4FC81E008BA347 /* AutoCompleteModel.m */; };
+		8CB749A01F4FC81E008BA347 /* BookDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749751F4FC81E008BA347 /* BookDetailModel.m */; };
+		8CB749A11F4FC81E008BA347 /* BookListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749771F4FC81E008BA347 /* BookListModel.m */; };
+		8CB749A21F4FC81E008BA347 /* BookSourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749791F4FC81E008BA347 /* BookSourceModel.m */; };
+		8CB749A31F4FC81E008BA347 /* ChapterDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7497B1F4FC81E008BA347 /* ChapterDetailModel.m */; };
+		8CB749A41F4FC81E008BA347 /* ChapterListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7497D1F4FC81E008BA347 /* ChapterListModel.m */; };
+		8CB749A51F4FC81E008BA347 /* BookDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749801F4FC81E008BA347 /* BookDetailView.m */; };
+		8CB749A61F4FC81E008BA347 /* BookListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749821F4FC81E008BA347 /* BookListCell.m */; };
+		8CB749A71F4FC81E008BA347 /* BookListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CB749831F4FC81E008BA347 /* BookListCell.xib */; };
+		8CB749A81F4FC81E008BA347 /* BookListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749851F4FC81E008BA347 /* BookListCollectionViewCell.m */; };
+		8CB749A91F4FC81E008BA347 /* BookListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CB749861F4FC81E008BA347 /* BookListCollectionViewCell.xib */; };
+		8CB749AA1F4FC81E008BA347 /* ChapterListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB749881F4FC81E008BA347 /* ChapterListTableViewCell.m */; };
+		8CB749AB1F4FC81E008BA347 /* ChapterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CB749891F4FC81E008BA347 /* ChapterListTableViewCell.xib */; };
+		8CB749AC1F4FC81E008BA347 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7498D1F4FC81E008BA347 /* Network.m */; };
+		8CB749B01F4FC9D9008BA347 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CB749AF1F4FC9D9008BA347 /* Info.plist */; };
+		EE2313113B39451DB98F455E /* libPods-JustReader2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52670FCE7DFCB7254056E238 /* libPods-JustReader2.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52670FCE7DFCB7254056E238 /* libPods-JustReader2.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JustReader2.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A805EE6B10A224EB5997F3 /* Pods-JustReader2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustReader2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustReader2.0/Pods-JustReader2.0.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB7491F1F4FC06B008BA347 /* JustReader2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustReader2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB749231F4FC06B008BA347 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CB749251F4FC06B008BA347 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8CB749261F4FC06B008BA347 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8CB749281F4FC06B008BA347 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8CB749291F4FC06B008BA347 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8CB7492C1F4FC06B008BA347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CB7492E1F4FC06B008BA347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CB749311F4FC06B008BA347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8CB749331F4FC06B008BA347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB7493A1F4FC706008BA347 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8CB7493D1F4FC81D008BA347 /* BasicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicNavigationController.h; sourceTree = "<group>"; };
+		8CB7493E1F4FC81D008BA347 /* BasicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicNavigationController.m; sourceTree = "<group>"; };
+		8CB7493F1F4FC81D008BA347 /* BasicTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTabBarController.h; sourceTree = "<group>"; };
+		8CB749401F4FC81D008BA347 /* BasicTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTabBarController.m; sourceTree = "<group>"; };
+		8CB749411F4FC81D008BA347 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		8CB749421F4FC81D008BA347 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		8CB749471F4FC81D008BA347 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		8CB749481F4FC81D008BA347 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
+		8CB749491F4FC81D008BA347 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		8CB7494A1F4FC81D008BA347 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		8CB7494C1F4FC81D008BA347 /* NSObject+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AFNetworking.h"; sourceTree = "<group>"; };
+		8CB7494D1F4FC81E008BA347 /* NSObject+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AFNetworking.m"; sourceTree = "<group>"; };
+		8CB7494E1F4FC81E008BA347 /* NSObject+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJExtension.h"; sourceTree = "<group>"; };
+		8CB7494F1F4FC81E008BA347 /* NSObject+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJExtension.m"; sourceTree = "<group>"; };
+		8CB749511F4FC81E008BA347 /* UIControl+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Event.h"; sourceTree = "<group>"; };
+		8CB749521F4FC81E008BA347 /* UIControl+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Event.m"; sourceTree = "<group>"; };
+		8CB749531F4FC81E008BA347 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		8CB749541F4FC81E008BA347 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		8CB749551F4FC81E008BA347 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		8CB749561F4FC81E008BA347 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		8CB749581F4FC81E008BA347 /* APIStringMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIStringMacros.h; sourceTree = "<group>"; };
+		8CB749591F4FC81E008BA347 /* ColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMacros.h; sourceTree = "<group>"; };
+		8CB7495A1F4FC81E008BA347 /* DataHandleMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandleMacros.h; sourceTree = "<group>"; };
+		8CB7495B1F4FC81E008BA347 /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
+		8CB7495C1F4FC81E008BA347 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		8CB7495D1F4FC81E008BA347 /* NotificationMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationMacros.h; sourceTree = "<group>"; };
+		8CB7495E1F4FC81E008BA347 /* PathMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathMacros.h; sourceTree = "<group>"; };
+		8CB7495F1F4FC81E008BA347 /* SingletonPatternMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonPatternMacros.h; sourceTree = "<group>"; };
+		8CB749601F4FC81E008BA347 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		8CB749631F4FC81E008BA347 /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		8CB749641F4FC81E008BA347 /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		8CB749651F4FC81E008BA347 /* BookListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListViewController.h; sourceTree = "<group>"; };
+		8CB749661F4FC81E008BA347 /* BookListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListViewController.m; sourceTree = "<group>"; };
+		8CB749671F4FC81E008BA347 /* ChapterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterDetailViewController.h; sourceTree = "<group>"; };
+		8CB749681F4FC81E008BA347 /* ChapterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterDetailViewController.m; sourceTree = "<group>"; };
+		8CB749691F4FC81E008BA347 /* ChapterListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterListViewController.h; sourceTree = "<group>"; };
+		8CB7496A1F4FC81E008BA347 /* ChapterListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterListViewController.m; sourceTree = "<group>"; };
+		8CB7496B1F4FC81E008BA347 /* ChooseBookSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseBookSourceViewController.h; sourceTree = "<group>"; };
+		8CB7496C1F4FC81E008BA347 /* ChooseBookSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseBookSourceViewController.m; sourceTree = "<group>"; };
+		8CB7496D1F4FC81E008BA347 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		8CB7496E1F4FC81E008BA347 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		8CB7496F1F4FC81E008BA347 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		8CB749701F4FC81E008BA347 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		8CB749721F4FC81E008BA347 /* AutoCompleteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCompleteModel.h; sourceTree = "<group>"; };
+		8CB749731F4FC81E008BA347 /* AutoCompleteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCompleteModel.m; sourceTree = "<group>"; };
+		8CB749741F4FC81E008BA347 /* BookDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailModel.h; sourceTree = "<group>"; };
+		8CB749751F4FC81E008BA347 /* BookDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailModel.m; sourceTree = "<group>"; };
+		8CB749761F4FC81E008BA347 /* BookListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListModel.h; sourceTree = "<group>"; };
+		8CB749771F4FC81E008BA347 /* BookListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListModel.m; sourceTree = "<group>"; };
+		8CB749781F4FC81E008BA347 /* BookSourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSourceModel.h; sourceTree = "<group>"; };
+		8CB749791F4FC81E008BA347 /* BookSourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSourceModel.m; sourceTree = "<group>"; };
+		8CB7497A1F4FC81E008BA347 /* ChapterDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterDetailModel.h; sourceTree = "<group>"; };
+		8CB7497B1F4FC81E008BA347 /* ChapterDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterDetailModel.m; sourceTree = "<group>"; };
+		8CB7497C1F4FC81E008BA347 /* ChapterListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterListModel.h; sourceTree = "<group>"; };
+		8CB7497D1F4FC81E008BA347 /* ChapterListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterListModel.m; sourceTree = "<group>"; };
+		8CB7497F1F4FC81E008BA347 /* BookDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailView.h; sourceTree = "<group>"; };
+		8CB749801F4FC81E008BA347 /* BookDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailView.m; sourceTree = "<group>"; };
+		8CB749811F4FC81E008BA347 /* BookListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListCell.h; sourceTree = "<group>"; };
+		8CB749821F4FC81E008BA347 /* BookListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListCell.m; sourceTree = "<group>"; };
+		8CB749831F4FC81E008BA347 /* BookListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookListCell.xib; sourceTree = "<group>"; };
+		8CB749841F4FC81E008BA347 /* BookListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListCollectionViewCell.h; sourceTree = "<group>"; };
+		8CB749851F4FC81E008BA347 /* BookListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListCollectionViewCell.m; sourceTree = "<group>"; };
+		8CB749861F4FC81E008BA347 /* BookListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookListCollectionViewCell.xib; sourceTree = "<group>"; };
+		8CB749871F4FC81E008BA347 /* ChapterListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterListTableViewCell.h; sourceTree = "<group>"; };
+		8CB749881F4FC81E008BA347 /* ChapterListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterListTableViewCell.m; sourceTree = "<group>"; };
+		8CB749891F4FC81E008BA347 /* ChapterListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChapterListTableViewCell.xib; sourceTree = "<group>"; };
+		8CB7498C1F4FC81E008BA347 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		8CB7498D1F4FC81E008BA347 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		8CB749AF1F4FC9D9008BA347 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFCF00916315ED132D837E70 /* Pods-JustReader2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustReader2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustReader2.0/Pods-JustReader2.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +135,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2313113B39451DB98F455E /* libPods-JustReader2.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002D24245554F51FDCDBA5B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85A805EE6B10A224EB5997F3 /* Pods-JustReader2.0.debug.xcconfig */,
+				DFCF00916315ED132D837E70 /* Pods-JustReader2.0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F2EF9FEF9BAB48E5130D6D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52670FCE7DFCB7254056E238 /* libPods-JustReader2.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8CB749161F4FC06B008BA347 = {
 			isa = PBXGroup;
 			children = (
 				8CB749211F4FC06B008BA347 /* JustReader2.0 */,
 				8CB749201F4FC06B008BA347 /* Products */,
+				002D24245554F51FDCDBA5B3 /* Pods */,
+				5F2EF9FEF9BAB48E5130D6D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +180,11 @@
 		8CB749211F4FC06B008BA347 /* JustReader2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				8CB749251F4FC06B008BA347 /* AppDelegate.h */,
-				8CB749261F4FC06B008BA347 /* AppDelegate.m */,
-				8CB749281F4FC06B008BA347 /* ViewController.h */,
-				8CB749291F4FC06B008BA347 /* ViewController.m */,
-				8CB7492B1F4FC06B008BA347 /* Main.storyboard */,
-				8CB7492E1F4FC06B008BA347 /* Assets.xcassets */,
-				8CB749301F4FC06B008BA347 /* LaunchScreen.storyboard */,
-				8CB749331F4FC06B008BA347 /* Info.plist */,
+				8CB7493B1F4FC81D008BA347 /* Base */,
+				8CB749451F4FC81D008BA347 /* Category */,
+				8CB749571F4FC81E008BA347 /* Macro */,
+				8CB749611F4FC81E008BA347 /* Main */,
+				8CB7498B1F4FC81E008BA347 /* NetworkManager */,
 				8CB749221F4FC06B008BA347 /* Supporting Files */,
 			);
 			path = JustReader2.0;
@@ -74,9 +193,199 @@
 		8CB749221F4FC06B008BA347 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8CB749251F4FC06B008BA347 /* AppDelegate.h */,
+				8CB749261F4FC06B008BA347 /* AppDelegate.m */,
+				8CB7492B1F4FC06B008BA347 /* Main.storyboard */,
+				8CB7492E1F4FC06B008BA347 /* Assets.xcassets */,
+				8CB749AF1F4FC9D9008BA347 /* Info.plist */,
+				8CB749301F4FC06B008BA347 /* LaunchScreen.storyboard */,
 				8CB749231F4FC06B008BA347 /* main.m */,
+				8CB7493A1F4FC706008BA347 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CB7493B1F4FC81D008BA347 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8CB7493C1F4FC81D008BA347 /* Controller */,
+				8CB749431F4FC81D008BA347 /* Model */,
+				8CB749441F4FC81D008BA347 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8CB7493C1F4FC81D008BA347 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8CB7493D1F4FC81D008BA347 /* BasicNavigationController.h */,
+				8CB7493E1F4FC81D008BA347 /* BasicNavigationController.m */,
+				8CB7493F1F4FC81D008BA347 /* BasicTabBarController.h */,
+				8CB749401F4FC81D008BA347 /* BasicTabBarController.m */,
+				8CB749411F4FC81D008BA347 /* BasicViewController.h */,
+				8CB749421F4FC81D008BA347 /* BasicViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8CB749431F4FC81D008BA347 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CB749441F4FC81D008BA347 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CB749451F4FC81D008BA347 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8CB749461F4FC81D008BA347 /* Foundation */,
+				8CB7494B1F4FC81D008BA347 /* Network */,
+				8CB749501F4FC81E008BA347 /* UIkit */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8CB749461F4FC81D008BA347 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				8CB749471F4FC81D008BA347 /* NSDate+Utils.h */,
+				8CB749481F4FC81D008BA347 /* NSDate+Utils.m */,
+				8CB749491F4FC81D008BA347 /* NSString+Utils.h */,
+				8CB7494A1F4FC81D008BA347 /* NSString+Utils.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		8CB7494B1F4FC81D008BA347 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8CB7494C1F4FC81D008BA347 /* NSObject+AFNetworking.h */,
+				8CB7494D1F4FC81E008BA347 /* NSObject+AFNetworking.m */,
+				8CB7494E1F4FC81E008BA347 /* NSObject+MJExtension.h */,
+				8CB7494F1F4FC81E008BA347 /* NSObject+MJExtension.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8CB749501F4FC81E008BA347 /* UIkit */ = {
+			isa = PBXGroup;
+			children = (
+				8CB749511F4FC81E008BA347 /* UIControl+Event.h */,
+				8CB749521F4FC81E008BA347 /* UIControl+Event.m */,
+				8CB749531F4FC81E008BA347 /* UIScrollView+Refresh.h */,
+				8CB749541F4FC81E008BA347 /* UIScrollView+Refresh.m */,
+				8CB749551F4FC81E008BA347 /* UIView+Frame.h */,
+				8CB749561F4FC81E008BA347 /* UIView+Frame.m */,
+			);
+			path = UIkit;
+			sourceTree = "<group>";
+		};
+		8CB749571F4FC81E008BA347 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				8CB749581F4FC81E008BA347 /* APIStringMacros.h */,
+				8CB749591F4FC81E008BA347 /* ColorMacros.h */,
+				8CB7495A1F4FC81E008BA347 /* DataHandleMacros.h */,
+				8CB7495B1F4FC81E008BA347 /* DimensMacros.h */,
+				8CB7495C1F4FC81E008BA347 /* Macros.h */,
+				8CB7495D1F4FC81E008BA347 /* NotificationMacros.h */,
+				8CB7495E1F4FC81E008BA347 /* PathMacros.h */,
+				8CB7495F1F4FC81E008BA347 /* SingletonPatternMacros.h */,
+				8CB749601F4FC81E008BA347 /* UtilsMacros.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		8CB749611F4FC81E008BA347 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8CB749621F4FC81E008BA347 /* Controller */,
+				8CB749711F4FC81E008BA347 /* Model */,
+				8CB7497E1F4FC81E008BA347 /* View */,
+				8CB7498A1F4FC81E008BA347 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8CB749621F4FC81E008BA347 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8CB749631F4FC81E008BA347 /* BookDetailViewController.h */,
+				8CB749641F4FC81E008BA347 /* BookDetailViewController.m */,
+				8CB749651F4FC81E008BA347 /* BookListViewController.h */,
+				8CB749661F4FC81E008BA347 /* BookListViewController.m */,
+				8CB749671F4FC81E008BA347 /* ChapterDetailViewController.h */,
+				8CB749681F4FC81E008BA347 /* ChapterDetailViewController.m */,
+				8CB749691F4FC81E008BA347 /* ChapterListViewController.h */,
+				8CB7496A1F4FC81E008BA347 /* ChapterListViewController.m */,
+				8CB7496B1F4FC81E008BA347 /* ChooseBookSourceViewController.h */,
+				8CB7496C1F4FC81E008BA347 /* ChooseBookSourceViewController.m */,
+				8CB7496D1F4FC81E008BA347 /* HomePageViewController.h */,
+				8CB7496E1F4FC81E008BA347 /* HomePageViewController.m */,
+				8CB7496F1F4FC81E008BA347 /* PageContentViewController.h */,
+				8CB749701F4FC81E008BA347 /* PageContentViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8CB749711F4FC81E008BA347 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CB749721F4FC81E008BA347 /* AutoCompleteModel.h */,
+				8CB749731F4FC81E008BA347 /* AutoCompleteModel.m */,
+				8CB749741F4FC81E008BA347 /* BookDetailModel.h */,
+				8CB749751F4FC81E008BA347 /* BookDetailModel.m */,
+				8CB749761F4FC81E008BA347 /* BookListModel.h */,
+				8CB749771F4FC81E008BA347 /* BookListModel.m */,
+				8CB749781F4FC81E008BA347 /* BookSourceModel.h */,
+				8CB749791F4FC81E008BA347 /* BookSourceModel.m */,
+				8CB7497A1F4FC81E008BA347 /* ChapterDetailModel.h */,
+				8CB7497B1F4FC81E008BA347 /* ChapterDetailModel.m */,
+				8CB7497C1F4FC81E008BA347 /* ChapterListModel.h */,
+				8CB7497D1F4FC81E008BA347 /* ChapterListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CB7497E1F4FC81E008BA347 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CB7497F1F4FC81E008BA347 /* BookDetailView.h */,
+				8CB749801F4FC81E008BA347 /* BookDetailView.m */,
+				8CB749811F4FC81E008BA347 /* BookListCell.h */,
+				8CB749821F4FC81E008BA347 /* BookListCell.m */,
+				8CB749831F4FC81E008BA347 /* BookListCell.xib */,
+				8CB749841F4FC81E008BA347 /* BookListCollectionViewCell.h */,
+				8CB749851F4FC81E008BA347 /* BookListCollectionViewCell.m */,
+				8CB749861F4FC81E008BA347 /* BookListCollectionViewCell.xib */,
+				8CB749871F4FC81E008BA347 /* ChapterListTableViewCell.h */,
+				8CB749881F4FC81E008BA347 /* ChapterListTableViewCell.m */,
+				8CB749891F4FC81E008BA347 /* ChapterListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CB7498A1F4FC81E008BA347 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8CB7498B1F4FC81E008BA347 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8CB7498C1F4FC81E008BA347 /* Network.h */,
+				8CB7498D1F4FC81E008BA347 /* Network.m */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +395,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CB749361F4FC06B008BA347 /* Build configuration list for PBXNativeTarget "JustReader2.0" */;
 			buildPhases = (
+				39144430B2D32C97ED7896B9 /* [CP] Check Pods Manifest.lock */,
 				8CB7491B1F4FC06B008BA347 /* Sources */,
 				8CB7491C1F4FC06B008BA347 /* Frameworks */,
 				8CB7491D1F4FC06B008BA347 /* Resources */,
+				C67597E43AE3A54793BB1898 /* [CP] Embed Pods Frameworks */,
+				4BA5F28CBA0386F4CD462C81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,22 +450,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB749A71F4FC81E008BA347 /* BookListCell.xib in Resources */,
 				8CB749321F4FC06B008BA347 /* LaunchScreen.storyboard in Resources */,
 				8CB7492F1F4FC06B008BA347 /* Assets.xcassets in Resources */,
+				8CB749AB1F4FC81E008BA347 /* ChapterListTableViewCell.xib in Resources */,
+				8CB749A91F4FC81E008BA347 /* BookListCollectionViewCell.xib in Resources */,
 				8CB7492D1F4FC06B008BA347 /* Main.storyboard in Resources */,
+				8CB749B01F4FC9D9008BA347 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39144430B2D32C97ED7896B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4BA5F28CBA0386F4CD462C81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustReader2.0/Pods-JustReader2.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C67597E43AE3A54793BB1898 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustReader2.0/Pods-JustReader2.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CB7491B1F4FC06B008BA347 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB7492A1F4FC06B008BA347 /* ViewController.m in Sources */,
+				8CB749A01F4FC81E008BA347 /* BookDetailModel.m in Sources */,
+				8CB749A81F4FC81E008BA347 /* BookListCollectionViewCell.m in Sources */,
+				8CB749971F4FC81E008BA347 /* UIView+Frame.m in Sources */,
+				8CB7499E1F4FC81E008BA347 /* PageContentViewController.m in Sources */,
+				8CB749951F4FC81E008BA347 /* UIControl+Event.m in Sources */,
+				8CB749A41F4FC81E008BA347 /* ChapterListModel.m in Sources */,
+				8CB7499D1F4FC81E008BA347 /* HomePageViewController.m in Sources */,
+				8CB7498F1F4FC81E008BA347 /* BasicTabBarController.m in Sources */,
+				8CB7498E1F4FC81E008BA347 /* BasicNavigationController.m in Sources */,
+				8CB749AA1F4FC81E008BA347 /* ChapterListTableViewCell.m in Sources */,
+				8CB749981F4FC81E008BA347 /* BookDetailViewController.m in Sources */,
 				8CB749271F4FC06B008BA347 /* AppDelegate.m in Sources */,
+				8CB749941F4FC81E008BA347 /* NSObject+MJExtension.m in Sources */,
+				8CB749A31F4FC81E008BA347 /* ChapterDetailModel.m in Sources */,
+				8CB749901F4FC81E008BA347 /* BasicViewController.m in Sources */,
+				8CB7499B1F4FC81E008BA347 /* ChapterListViewController.m in Sources */,
+				8CB749AC1F4FC81E008BA347 /* Network.m in Sources */,
+				8CB749A21F4FC81E008BA347 /* BookSourceModel.m in Sources */,
+				8CB749A11F4FC81E008BA347 /* BookListModel.m in Sources */,
+				8CB7499C1F4FC81E008BA347 /* ChooseBookSourceViewController.m in Sources */,
+				8CB749931F4FC81E008BA347 /* NSObject+AFNetworking.m in Sources */,
+				8CB749A51F4FC81E008BA347 /* BookDetailView.m in Sources */,
+				8CB7499F1F4FC81E008BA347 /* AutoCompleteModel.m in Sources */,
+				8CB749961F4FC81E008BA347 /* UIScrollView+Refresh.m in Sources */,
+				8CB749911F4FC81E008BA347 /* NSDate+Utils.m in Sources */,
+				8CB749991F4FC81E008BA347 /* BookListViewController.m in Sources */,
 				8CB749241F4FC06B008BA347 /* main.m in Sources */,
+				8CB7499A1F4FC81E008BA347 /* ChapterDetailViewController.m in Sources */,
+				8CB749921F4FC81E008BA347 /* NSString+Utils.m in Sources */,
+				8CB749A61F4FC81E008BA347 /* BookListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +601,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -257,6 +649,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -273,6 +666,7 @@
 		};
 		8CB749371F4FC06B008BA347 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85A805EE6B10A224EB5997F3 /* Pods-JustReader2.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BXWYPZNJYK;
@@ -285,6 +679,7 @@
 		};
 		8CB749381F4FC06B008BA347 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFCF00916315ED132D837E70 /* Pods-JustReader2.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BXWYPZNJYK;
@@ -314,6 +709,7 @@
 				8CB749381F4FC06B008BA347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

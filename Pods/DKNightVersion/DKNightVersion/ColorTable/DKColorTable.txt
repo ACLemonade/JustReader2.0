@@ -1,0 +1,10 @@
+NORMAL   NIGHT    YELLOW   GREEN
+#f2f2f2  #111111  #f5efdd  #cde5d4 BG
+#aaaaaa  #313131  #aaaaaa  #ffffff SEP
+#0000ff  #ffffff  #fa0000  #ffffff TINT
+#333333  #363636  #333333  #333333 TEXT
+#ffffff  #282828  #ffffff  #ffffff BAR
+#f0f0f0  #222222  #dedede  #ffffff HIGHLIGHTED
+
+
+  

@@ -7,16 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "HomePageViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+-(UIWindow *)window{
+    if (_window == nil) {
+        _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        [_window makeKeyAndVisible];
+    }
+    return _window;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window.rootViewController = [[HomePageViewController alloc] init];
+    NSLog(@"文件路径: %@", kPathDocument);
+    //分配缓存空间
+    NSURLCache *myCache = [[NSURLCache alloc] initWithMemoryCapacity:5*1024*1024 diskCapacity:20*1024*1024 diskPath:nil];
+    [NSURLCache setSharedURLCache:myCache];
     return YES;
 }
 
